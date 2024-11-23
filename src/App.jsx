@@ -152,6 +152,9 @@ const App = () => {
   };
 
   const analyzeContent = async () => {
+    console.log("Selected Note:", selectedNote);
+    console.log("Content:", selectedNote?.content);
+
     if (!selectedNote || !selectedNote.content) {
       toast.error('No content to analyze.');
       return;
